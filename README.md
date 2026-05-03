@@ -1218,6 +1218,43 @@ Thanks goes to these amazing people:
             <sub><b>RajGajjar-01</b></sub>
         </a>
     </td>
+            <td align="center">
+        <a href="https://github.com/4arjun">
+            <img src="https://avatars.githubusercontent.com/u/144534911?v=4" width="100" alt="4arjun"/>
+            <br />
+            <sub><b>4arjun</b></sub>
+        </a>
+    </td>
+            <td align="center">
+        <a href="https://github.com/cloudenochcsis">
+            <img src="https://avatars.githubusercontent.com/u/155973884?v=4" width="100" alt="cloudenochcsis"/>
+            <br />
+            <sub><b>cloudenochcsis</b></sub>
+        </a>
+    </td>
+            <td align="center">
+        <a href="https://github.com/Thibault00">
+            <img src="https://avatars.githubusercontent.com/u/84420566?v=4" width="100" alt="Thibault00"/>
+            <br />
+            <sub><b>Thibault00</b></sub>
+        </a>
+    </td>
+            <td align="center">
+        <a href="https://github.com/umeraamir09">
+            <img src="https://avatars.githubusercontent.com/u/130839691?v=4" width="100" alt="umeraamir09"/>
+            <br />
+            <sub><b>umeraamir09</b></sub>
+        </a>
+    </td>
+		</tr>
+		<tr>
+            <td align="center">
+        <a href="https://github.com/aksKrIITK">
+            <img src="https://avatars.githubusercontent.com/u/196282905?v=4" width="100" alt="aksKrIITK"/>
+            <br />
+            <sub><b>aksKrIITK</b></sub>
+        </a>
+    </td>
 		</tr>
 	</tbody>
 </table>
