@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import logging
+
 from langgraph.graph import END, StateGraph
 from langgraph.graph.state import CompiledStateGraph
 
@@ -33,15 +35,15 @@ from app.pipeline.routing import (
 )
 from app.state import AgentState
 
-import logging
-logger=logging.getLogger(__name__)
+logger = logging.getLogger(__name__)
+
 
 def build_graph(config: None = None) -> CompiledStateGraph:
     """Build and compile the LangGraph agent."""
-    logger.info("[OpenSRE] Initializing graph pipeline")
+    logger.debug("[OpenSRE] Initializing graph pipeline")
     _ = config
     graph = StateGraph(AgentState)
-    logger.info("[OpenSRE] Adding nodes to graph-")
+    logger.debug("[OpenSRE] Adding nodes to graph")
     graph.add_node("inject_auth", inject_auth_node)
 
     graph.add_node("router", router_node)
@@ -49,7 +51,7 @@ def build_graph(config: None = None) -> CompiledStateGraph:
     graph.add_node("general", general_node)  # type: ignore[arg-type]
     graph.add_node("tool_executor", tool_executor_node)
 
-    logger.info("[OpenSRE] Adding investigation nodes")
+    logger.debug("[OpenSRE] Adding investigation nodes")
 
     graph.add_node("extract_alert", node_extract_alert)
     graph.add_node("resolve_integrations", node_resolve_integrations)
@@ -96,7 +98,7 @@ def build_graph(config: None = None) -> CompiledStateGraph:
     graph.add_edge("opensre_eval", "publish")
     graph.add_edge("publish", END)
 
-    logger.info("[OpenSRE] Graph construction complete")
+    logger.debug("[OpenSRE] Graph construction complete")
 
     return graph.compile()
 
